@@ -6,6 +6,7 @@
     <title>Nike. Just Do It. Nike.com</title>
     <link rel="icon" href="./assets/images/nikelogo.png">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <div class="navbar">
@@ -42,12 +43,15 @@
             <a href="#">Sportswear</a>
             <a href="#">Gifts</a>
         </div>
-        <div class="search-cart">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
-            <img src="./assets/images/cart.png" alt="Cart Icon">
-        </div>
+        <div class="search">
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
         </div>
     </div>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
