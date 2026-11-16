@@ -4,53 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike. Just Do It. Nike.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/images/nikelogo.png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/all.min.css">     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="nav-top">
-            <div class="logo1"><a href="">
-                <img src="./assets/images/1stlogo.png" alt="1st Logo" width="30px" height="30px">
-            </a>
-            </div>
-            <div class="logo2"><a href="">
-                <img src="./assets/images/2ndlogo.png" alt="2nd Logo" width="23px" height="23px">
-            </a>
-            </div>
-            <div class="link-top">
-
-                <a href="#">Find a Store </a>
-                <span>|</span>
-                <a href="#">Help </a>
-                <span>|</span>
-                <a href="#">Join Us </a>
-                <span>|</span>
-                <a href="#">Sign In</a>
-            </div>
-        </div>
-        <div class="nav-bottom">
-        <div class="logo">
-            <img src="./assets/images/nikelogo.png" alt="Nike Logo" width="80" height="65">
-        </div>
-        <div class="nav-links">
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-            <a href="#">Jordan</a>
-            <a href="#">NikeSKIMS</a>
-            <a href="#">Sportswear</a>
-            <a href="#">Gifts</a>
-        </div>
-        <div class="search">
-        <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-        </div>
+    <div class="top-strip">
+    <div class="top-brand-marks"><a href="#" aria-label="Jordan"><img src="./assets/images/1stlogo.png" alt=""></a><span class="converse-mark"><img src="./assets/images/2ndlogo.png" alt=""></span></div>
+    <div class="utility-links">
+      <a href="#store">Find a Store</a><span>|</span><a href="#help">Help</a><span>|</span><a href="#join">Join Us</a><span>|</span><a href="#signin">Sign In</a>
     </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="nike-logo" href="#" aria-label="Nike home">
+      <img src="./assets/images/nikelogo.png" alt="">
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#men" class="nav-link" data-menu="men">Men</a></li>
+        <li class="nav-item"><a href="#women" class="nav-link" data-menu="women">Women</a></li>
+        <li class="nav-item"><a href="#kids" class="nav-link" data-menu="kids">Kids</a></li>
+        <li class="nav-item"><a href="#jordan" class="nav-link" data-menu="jordan">Jordan</a></li>
+        <li class="nav-item"><a href="#nikeskims" class="nav-link" data-menu="nikeskims">NikeSKIMS</a></li>
+        <li class="nav-item"><a href="#sportswear" class="nav-link" data-menu="sportswear">Sportswear</a></li>
+        <li class="nav-item"><a href="#gifts" class="nav-link" data-menu="gifts">Gifts</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <form class="search-box" id="searchForm"><button type="submit" aria-label="Search">⌕</button><input type="search" placeholder="Search" aria-label="Search Nike"></form>
+      <a class="header-icon" href="#favorites" aria-label="Favorites">♡</a>
+      <a class="header-icon bag-icon" href="#bag" aria-label="Shopping bag">♧<small>0</small></a>
+    </div>
+  </header>
+
+  <div class="mega-backdrop" id="megaBackdrop"></div>
+  <section class="mega-menu" id="megaMenu" aria-label="Navigation submenu">
+    <div class="mega-inner" id="megaInner"></div>
+  </section>
+
+  <main>
+    <section class="promo-bar">
+      <strong>Move, play, and explore.</strong>
+      <a href="#featured">Shop the latest Nike styles</a>
+    </section>
+
+    <section class="hero-wrap container-fluid px-0" id="featured">
+      <div class="hero-main">
+        <video src="assets/video/nikevid1.mp4" controls autoplay loop="infinite" muted></video>
+        <!-- <img src="./assets/images/swim.avif" alt="Athletes training outdoors"> -->
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <span class="eyebrow">NIKE SPORTSWEAR</span>
+          <h1>GREATEST<br>WRAPPED UP.</h1>
+          <p>Make every moment a statement.</p>
+          <a class="pill-btn" href="#trending">Shop</a>
+        </div>
+      </div>
+      <div class="feature-grid container-fluid">
+        <article class="feature-tile">
+          <img src="./assets/images/redtrouser.avif" alt="Woman athlete wearing sportswear">
+          <div class="tile-caption"><h3>Built for your best</h3><a href="#women">Shop Women</a></div>
+        </article>
+        <article class="feature-tile">
+          <img src="./assets/images/gymone.avif" alt="Athlete training in gym">
+          <div class="tile-caption"><h3>Own your workout</h3><a href="#men">Shop Training</a></div>
+        </article>
+        <article class="feature-tile">
+          <img src="./assets/images/yoga.avif" alt="Athletes stretching">
+          <div class="tile-caption"><h3>Made to move</h3><a href="#kids">Explore More</a></div>
+        </article>
+      </div>
+    </section>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
