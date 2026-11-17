@@ -1,12 +1,12 @@
-:root{
-    --ink:#111;
-    --muted:#707072;
-    --line:#e5e5e5
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+}
+:root{
+    --ink:#111;
+    --muted:#707072;
+    --line:#e5e5e5
 }
 html{
     scroll-behavior:smooth;
@@ -641,7 +641,26 @@ a{
     margin-bottom:18px;
 }.footer-top a{
     display:block;
-    color:#aaa;font-size:12px;margin:0 0 12px}.footer-top a:hover{color:#fff}.footer-bottom{border-top:1px solid #333;padding-top:22px;display:flex;justify-content:space-between;gap:20px;color:#aaa;font-size:11px}.footer-bottom div{display:flex;gap:20px;flex-wrap:wrap}
+    color:#aaa;
+    font-size:12px;
+    margin:0 0 12px;
+}
+.footer-top a:hover{
+    color:#fff;
+}.footer-bottom{
+    border-top:1px solid #333;
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#aaa;
+    font-size:11px;
+}
+.footer-bottom div{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
 .shoes-small img{
     width: 100px;
@@ -652,4 +671,113 @@ a{
     width:100%;
     height: 100%;
     z-index: 1000;
+}
+
+
+
+.product-section {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.slider-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.slider-heading h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.slider-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.slider-buttons button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #e8e8e8;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.product {
+    flex: 0 0 calc((100% - 30px) / 3);
+    min-width: 0;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.product p {
+    color: #777;
+    margin-top: 7px;
+}
+
+.product .price {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .product {
+        flex: 0 0 calc((100% - 15px) / 2);
+    }
+
+    .product img {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .product {
+        flex: 0 0 100%;
+    }
+
+    .product img {
+        height: 450px;
+    }
+
+    .slider-heading h2 {
+        font-size: 19px;
+    }
+
+    .slider-buttons button {
+        width: 40px;
+        height: 40px;
+    }
+
 }

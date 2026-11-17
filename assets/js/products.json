@@ -1,0 +1,40 @@
+
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Nike Sportswear Fleece",
+            "category": "Men's Fleece Pants",
+            "price": "Rs. 12,500",
+            "image": "assets/images/p1.avif"
+        },
+        {
+            "id": 2,
+            "name": "Nike Basketball Hoodie",
+            "category": "Kids' Basketball Hoodie",
+            "price": "Rs. 9,500",
+            "image": "assets/images/p2.avif"
+        },
+        {
+            "id": 3,
+            "name": "Nike Club Fleece",
+            "category": "Men's Fleece Pants",
+            "price": "Rs. 11,000",
+            "image": "assets/images/p3.avif"
+        },
+        {
+            "id": 4,
+            "name": "Nike Sportswear Hoodie",
+            "category": "Women's Hoodie",
+            "price": "Rs. 10,500",
+            "image": "assets/images/p4.avif"
+        },
+        {
+            "id": 5,
+            "name": "Nike Tech Fleece",
+            "category": "Men's Tracksuit",
+            "price": "Rs. 15,000",
+            "image": "assets/images/p5.avif"
+        }
+    ]
+}
