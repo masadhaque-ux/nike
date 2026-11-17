@@ -533,3 +533,67 @@ a{
 .baseball-image > img {
     object-position: center 40%;
 }
+
+.split-feature{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;padding:0 8px;
+}
+.split-card{
+    height:460px;
+}
+.split-card:after{
+    content:"";
+    position:absolute;
+    inset:40% 0 0;
+    background:linear-gradient(transparent,#0008);
+}
+.split-card>img{
+    transition:transform .6s;
+}
+.split-copy{
+    position:absolute;
+    z-index:1;
+    left:25px;
+    bottom:25px;
+    color:#fff;
+}
+.split-copy h2{
+    font-size:34px;
+}
+.split-copy p{
+    font-size:14px;
+}
+.trending-section{
+    padding:65px 7% 75px;
+    text-align:center;
+}
+.trending-section h2{
+    font-size:20px;
+    font-weight:900;
+    letter-spacing:1px;
+    margin-bottom:35px;
+}
+.trending-links{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:25px 20px;
+    /* margin-left: 50%; */
+}
+.trending-links img{
+    place-items: center;
+    object-fit: cover;
+}
+.trending-links a{
+    font-size:13px;
+    font-weight:700;
+    color:#555;
+    text-align: center;
+    
+}
+.trending-links a:hover{
+    color:#111;
+}
