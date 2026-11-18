@@ -154,13 +154,14 @@ a{
 }
 
 .header-icon {
-    font-size: 29px;
+    font-size: 20px;
     line-height: 1;
     position: relative;
+    text-decoration: none;
 }
 
 .bag-icon {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .bag-icon small {
@@ -746,8 +747,6 @@ a{
     font-weight: bold;
 }
 
-
-/* Responsive */
 
 @media (max-width: 768px) {
 
