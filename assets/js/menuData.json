@@ -1,0 +1,58 @@
+
+{
+  "men": [
+    ["New & Featured", "New Arrivals", "Best Sellers", "Latest Drops", "Gifts", "Jordan Brand x Space Jam", "SNKRS Launch Calendar", "Shop All Sale"],
+    ["Shoes", "All Shoes", "Basketball", "Jordan", "Running", "Sportswear", "Training & Gym", "Custom Shoes"],
+    ["Clothing", "All Clothing", "Fleece", "Hoodies & Sweatshirts", "Jackets & Vests", "Pants", "Shorts", "Tops & Graphic Tees"],
+    ["Accessories", "All Accessories", "Bags & Backpacks", "Hats & Headwear", "Socks", "Sunglasses"],
+    ["Shop By Sport", "ACG", "Baseball", "Basketball", "Football", "Golf", "Locker Room", "Running", "Soccer", "Skateboarding", "Swimming", "Tennis", "Training"]
+  ],
+
+  "women": [
+    ["New & Featured", "New Arrivals", "Best Sellers", "Latest Drops", "Gifts", "NikeSKIMS", "Shop All Sale"],
+    ["Shoes", "All Shoes", "Lifestyle", "Running", "Training & Gym", "Jordan", "Basketball", "Sandals & Slides"],
+    ["Clothing", "All Clothing", "Sports Bras", "Leggings", "Hoodies & Sweatshirts", "Jackets & Vests", "Matching Sets", "Pants", "Shorts", "Tops & T-Shirts"],
+    ["Accessories", "All Accessories", "Bags & Backpacks", "Hats & Headwear", "Socks", "Sunglasses"],
+    ["Shop By Sport", "Running", "Training", "Yoga", "Basketball", "Soccer", "Tennis", "Golf", "Swimming"]
+  ],
+
+  "kids": [
+    ["New & Featured", "New Arrivals", "Best Sellers", "Gifts", "Nike x LEGO", "Jordan Brand", "Shop All Sale"],
+    ["Shoes", "All Shoes", "Big Kids (7–12 yrs)", "Little Kids (3–7 yrs)", "Baby & Toddler (0–3 yrs)", "Basketball", "Jordan", "Running"],
+    ["Clothing", "All Clothing", "Big Kids", "Little Kids", "Baby & Toddler", "Hoodies & Sweatshirts", "Jackets & Vests", "Pants", "Shorts", "Tops & T-Shirts"],
+    ["Accessories", "Bags & Backpacks", "Hats & Headwear", "Socks", "Sports Equipment"],
+    ["Shop By Sport", "Basketball", "Football", "Running", "Soccer", "Gymnastics", "Fan Gear"]
+  ],
+
+  "jordan": [
+    ["New & Featured", "New Arrivals", "Best Sellers", "Heat Check", "Gifts", "Jordan Brand x Space Jam", "Shop All Sale"],
+    ["Men", "Shop All Men", "Jordan Shoes", "Air Jordan 1", "Jordan Clothing", "Accessories"],
+    ["Women", "Shop All Women", "Jordan Shoes", "Air Jordan 1", "Jordan Clothing", "Accessories"],
+    ["Kids", "Shop All Kids", "Jordan Shoes", "Air Jordan 1", "Jordan Clothing", "Accessories"],
+    ["Shop By Sport", "Basketball", "Golf", "Training", "Jordan Essentials"]
+  ],
+
+  "nikeskims": [
+    ["Featured", "NikeSKIMS Collection", "New Arrivals", "Lookbook", "Shop All"],
+    ["Shoes", "All Shoes", "NikeSKIMS Rift"],
+    ["Clothing", "All Clothing", "Bras", "Jackets", "Leggings", "Shorts", "Tops & Tanks"],
+    ["Accessories", "All Accessories", "Socks", "Bags"],
+    ["Shop By Color", "Carob Brown", "Ivory", "Obsidian", "University Red"]
+  ],
+
+  "sportswear": [
+    ["Featured", "New Arrivals", "Best Sellers", "Nike Tech", "Nike Club", "Nike Phoenix Fleece"],
+    ["Shoes", "Lifestyle Shoes", "Air Force 1", "Air Max", "Dunk", "Blazer"],
+    ["Clothing", "T-Shirts", "Hoodies & Sweatshirts", "Tracksuits", "Jackets", "Pants & Shorts"],
+    ["Accessories", "Bags & Backpacks", "Hats", "Socks"],
+    ["Collections", "Nike Sportswear", "ACG", "NikeLab", "Nike Tech"]
+  ],
+
+  "gifts": [
+    ["Gifts By Recipient", "Gifts for Men", "Gifts for Women", "Gifts for Kids", "Gifts for Athletes"],
+    ["Gifts By Price", "Under $50", "$50–$100", "$100–$150", "Over $150"],
+    ["Popular Gifts", "Shoes", "Hoodies & Sweatshirts", "Sportswear", "Accessories"],
+    ["Featured", "Best Sellers", "New Arrivals", "Personalizable Gifts"],
+    ["Shop By Sport", "Running", "Basketball", "Football", "Training", "Golf"]
+  ]
+}

@@ -189,7 +189,7 @@ a{
 .mega-backdrop {
     display: none;
     position: fixed;
-    inset: 104px 0 0;
+    /* inset: 104px 0 0; */
     background: #00000042;
     z-index: 1020;
 }
@@ -200,7 +200,7 @@ a{
     right: 0;
     top: 104px;
     background: #fff;
-    z-index: 1040;
+    z-index: 1300;
     max-height: calc(100vh - 104px);
     overflow: auto;
     display: none;
@@ -294,6 +294,7 @@ a{
 
 .hero-main > video,
 .campaign-image > img,
+.campaign-image > video,
 .wide-campaign > img,
 .feature-tile > img,
 .split-card > img {
@@ -950,69 +951,865 @@ body {
     color: #111;
 }
 
-/* Responsive Design */
+/* Mobile Menu Categories */
 
-@media screen and (max-width: 900px) {
+.mobile-menu-group {
+    margin-top: 15px;
+}
+
+.mobile-menu-group h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.mobile-menu-group a {
+    display: block;
+    font-size: 12px;
+    color: #707072;
+    margin-bottom: 10px;
+}
+
+.mobile-menu-group a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.mega-menu.open {
+    display: block;
+    position: fixed;
+}
+
+.mobile-menu-btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 1200;
+}
+
+/* =====================================
+   LARGE LAPTOPS (1200px)
+===================================== */
+
+@media screen and (max-width: 1200px) {
+
+    .nav-list {
+        gap: 16px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .search-box {
+        width: 140px;
+    }
+
+    .header-actions {
+        gap: 12px;
+    }
+
+    .mega-inner {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .hero-main {
+        min-height: 550px;
+    }
+
+    .feature-tile {
+        height: 280px;
+    }
+
+    .product img {
+        height: 480px;
+    }
+
+    .split-card {
+        height: 400px;
+    }
 
     .footer-main {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .country-selector {
+        grid-column: 1 / -1;
         text-align: left;
     }
 
-    .category-section {
+}
+
+
+/* =====================================
+   LAPTOPS AND SMALL DESKTOPS (992px)
+===================================== */
+
+@media screen and (max-width: 992px) {
+
+    .site-header {
+        padding: 0 3%;
+    }
+
+    .nav-list {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .search-box {
+        width: 110px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .hero-main {
+        height: 65vw;
+        min-height: 450px;
+    }
+
+    .campaign-image {
+        height: 55vw;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-tile {
+        height: 300px;
+    }
+
+    .product-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .split-card {
+        height: 350px;
+    }
+
+    .trending-links {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-top {
         gap: 20px;
     }
 
 }
 
-@media screen and (max-width: 600px) {
 
-    .nike-footer {
+/* =====================================
+   TABLETS (768px)
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Top Navigation */
+
+    .top-strip {
+        display: none;
+    }
+
+    .site-header {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .nike-logo img {
+        width: 55px;
+        height: 45px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        cursor: pointer;
+        order: 1;
+    }
+
+    .header-actions {
+        order: 2;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 38px;
+        height: 38px;
+        padding: 0 8px;
+        background: transparent;
+    }
+
+    .search-box input {
+        display: none;
+    }
+
+    .search-box button {
+        font-size: 25px;
+    }
+
+    .header-icon {
+        font-size: 19px;
+    }
+
+
+    /* Mega Menu */
+
+    .mega-menu {
+        top: 65px;
+        max-height: calc(100vh - 65px);
+    }
+
+    .mega-backdrop {
+        inset: 65px 0 0;
+    }
+
+    .mega-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
         padding: 25px 20px;
     }
 
-    .category-section {
+    .mega-column h3 {
+        font-size: 14px;
+    }
+
+    .mega-column a {
+        font-size: 12px;
+    }
+
+
+    /* Promotion Bar */
+
+    .promo-bar {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+
+    /* Hero Section */
+
+    .hero-main {
+        height: 75vw;
+        min-height: 420px;
+    }
+
+    .hero-main video {
+        object-position: center;
+    }
+
+    .hero-copy,
+    .campaign-copy {
+        left: 5%;
+        bottom: 7%;
+    }
+
+    .hero-copy h1,
+    .campaign-copy h2 {
+        font-size: 45px;
+    }
+
+    .hero-copy p,
+    .campaign-copy p {
+        font-size: 13px;
+    }
+
+
+    /* Feature Grid */
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-tile {
+        height: 260px;
+    }
+
+
+    /* Campaign */
+
+    .campaign-image {
+        height: 65vw;
+        min-height: 350px;
+    }
+
+    .wide-campaign {
+        height: 65vw;
+        min-height: 350px;
+    }
+
+    .wide-copy h2 {
+        font-size: 40px;
+    }
+
+
+    /* Products */
+
+    .product-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product img {
+        height: 380px;
+    }
+
+    .product h3 {
+        font-size: 16px;
+    }
+
+    .slider-heading h2 {
+        font-size: 21px;
+    }
+
+    .slider-buttons button {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* Split Feature */
+
+    .split-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .split-card {
+        height: 400px;
+    }
+
+
+    /* Trending */
+
+    .trending-section {
+        padding: 45px 5%;
+    }
+
+    .trending-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px 15px;
+    }
+
+
+    /* Stories */
+
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-grid img {
+        height: 190px;
+    }
+
+
+    /* Dark Footer */
+
+    .site-footer {
+        padding: 40px 5% 25px;
+    }
+
+    .site-footer .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .site-footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    /* White Nike Footer */
+
+    .nike-footer .category-section {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px 20px;
     }
 
-    .footer-main {
+    .nike-footer .footer-main {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px 15px;
+        gap: 30px 20px;
     }
 
-    .top-links {
-        gap: 13px;
+    .nike-footer .country-selector {
+        text-align: left;
     }
 
-    .top-links a {
-        font-size: 11px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
+    .nike-footer .footer-bottom {
         align-items: flex-start;
-        gap: 18px;
-    }
-
-    .legal-links {
-        gap: 15px;
+        flex-direction: column;
     }
 
 }
 
-@media screen and (max-width: 380px) {
 
-    .category-section {
-        grid-template-columns: 1fr 1fr;
+/* =====================================
+   MOBILE PHONES (576px)
+===================================== */
+
+@media screen and (max-width: 576px) {
+
+    /* Header */
+
+    .site-header {
+        height: 60px;
+        padding: 0 15px;
     }
 
-    .footer-main {
+    .nike-logo img {
+        width: 48px;
+        height: 40px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .mobile-menu-btn span {
+        width: 21px;
+    }
+
+    .mega-menu {
+        top: 60px;
+    }
+
+    .mega-backdrop {
+        inset: 60px 0 0;
+    }
+
+    .mega-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+
+    /* Hero */
+
+    .hero-main {
+        height: 110vw;
+        min-height: 400px;
+    }
+
+    .hero-copy,
+    .campaign-copy {
+        left: 20px;
+        bottom: 25px;
+    }
+
+    .hero-copy h1,
+    .campaign-copy h2 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .hero-copy p,
+    .campaign-copy p {
+        font-size: 12px;
+    }
+
+    .pill-btn {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+
+    /* Feature Grid */
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .feature-tile {
+        height: 320px;
+    }
+
+    .tile-caption h3 {
+        font-size: 19px;
+    }
+
+
+    /* Campaign */
+
+    .campaign-image {
+        height: 100vw;
+        min-height: 320px;
+    }
+
+    .wide-campaign {
+        height: 100vw;
+        min-height: 320px;
+    }
+
+    .wide-copy {
+        left: 20px;
+        bottom: 25px;
+    }
+
+    .wide-copy h2 {
+        font-size: 35px;
+    }
+
+
+    /* Product Row */
+
+    .product-row {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 300px;
+    }
+
+    .section-heading {
+        padding: 35px 10px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+
+    /* Product Slider */
+
+    .product-section {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .slider-heading {
+        margin-bottom: 15px;
+    }
+
+    .slider-heading h2 {
+        font-size: 18px;
+    }
+
+    .slider-buttons {
+        gap: 7px;
+    }
+
+    .slider-buttons button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .product {
+        flex: 0 0 100%;
+    }
+
+    .product img {
+        height: 390px;
+    }
+
+    .product h3 {
+        font-size: 15px;
+    }
+
+    .product p {
+        font-size: 13px;
+    }
+
+
+    /* Split Feature */
+
+    .split-feature {
+        grid-template-columns: 1fr;
+        padding: 0 8px;
+    }
+
+    .split-card {
+        height: 350px;
+    }
+
+    .split-copy {
+        left: 18px;
+        bottom: 20px;
+    }
+
+    .split-copy h2 {
+        font-size: 27px;
+    }
+
+
+    /* Trending */
+
+    .trending-section {
+        padding: 40px 15px;
+    }
+
+    .trending-section h2 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .trending-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 12px;
+    }
+
+    .trending-links a {
+        font-size: 12px;
+    }
+
+
+    /* Stories */
+
+    .stories {
+        padding: 15px 4% 40px;
+    }
+
+    .stories > h2 {
+        font-size: 19px;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .story-grid img {
+        height: 230px;
+    }
+
+
+    /* Dark Footer */
+
+    .site-footer {
+        padding: 35px 20px 20px;
+    }
+
+    .site-footer .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+        padding-bottom: 30px;
+    }
+
+    .site-footer .footer-top h4 {
+        font-size: 12px;
+    }
+
+    .site-footer .footer-top a {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .site-footer .footer-bottom {
+        gap: 15px;
+        font-size: 10px;
+    }
+
+    .site-footer .footer-bottom div {
+        gap: 12px;
+    }
+
+
+    /* White Footer */
+
+    .nike-footer {
+        padding: 25px 18px;
+    }
+
+    .nike-footer .footer-top {
+        margin-bottom: 30px;
+    }
+
+    .nike-footer .footer-logo img {
+        width: 55px;
+    }
+
+    .nike-footer .top-links {
+        gap: 13px;
+    }
+
+    .nike-footer .top-links a {
+        font-size: 11px;
+    }
+
+    .nike-footer .category-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+
+    .nike-footer .category-column h4 {
+        font-size: 13px;
+    }
+
+    .nike-footer .category-column a {
+        font-size: 11px;
+    }
+
+    .nike-footer .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+        margin-bottom: 35px;
+    }
+
+    .nike-footer .footer-column h4 {
+        font-size: 11px;
+    }
+
+    .nike-footer .footer-column a {
+        font-size: 10px;
+    }
+
+    .nike-footer .footer-divider {
+        margin: 25px 0;
+    }
+
+    .nike-footer .footer-bottom {
+        font-size: 10px;
+        gap: 15px;
+    }
+
+    .nike-footer .legal-links {
+        gap: 12px;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE PHONES (400px)
+===================================== */
+
+@media screen and (max-width: 400px) {
+
+    .site-header {
+        padding: 0 10px;
+    }
+
+    .header-actions {
+        gap: 7px;
+    }
+
+    .hero-main {
+        min-height: 350px;
+    }
+
+    .hero-copy h1,
+    .campaign-copy h2 {
+        font-size: 32px;
+    }
+
+    .hero-copy p,
+    .campaign-copy p {
+        font-size: 11px;
+    }
+
+    .feature-tile {
+        height: 260px;
+    }
+
+    .campaign-image {
+        min-height: 280px;
+    }
+
+    .wide-campaign {
+        min-height: 280px;
+    }
+
+    .wide-copy h2 {
+        font-size: 29px;
+    }
+
+    .product img {
+        height: 330px;
+    }
+
+    .slider-heading h2 {
+        font-size: 16px;
+    }
+
+    .slider-buttons button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .split-card {
+        height: 290px;
+    }
+
+    .trending-links {
+        gap: 18px 8px;
+    }
+
+    .story-grid img {
+        height: 190px;
+    }
+
+    .nike-footer .top-links {
+        gap: 9px;
+    }
+
+    .nike-footer .top-links a {
+        font-size: 10px;
+    }
+
+    .nike-footer .category-section,
+    .nike-footer .footer-main {
+        gap: 22px 10px;
+    }
+
+    .mega-inner {
+        gap: 15px;
+        padding: 18px 12px;
+    }
+
+}
+
+
+/* =====================================
+   EXTRA SMALL PHONES (350px)
+===================================== */
+
+@media screen and (max-width: 350px) {
+
+    .hero-copy h1,
+    .campaign-copy h2 {
+        font-size: 28px;
+    }
+
+    .header-icon {
+        font-size: 17px;
+    }
+
+    .feature-tile {
+        height: 230px;
+    }
+
+    .product img {
+        height: 280px;
+    }
+
+    .site-footer .footer-top {
         grid-template-columns: 1fr 1fr;
+        gap: 20px 10px;
+    }
+
+    .nike-footer .category-column a,
+    .nike-footer .footer-column a {
+        font-size: 10px;
+    }
+
+    .nike-footer .legal-links {
+        gap: 10px;
     }
 
 }
