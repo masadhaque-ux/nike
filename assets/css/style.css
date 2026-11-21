@@ -987,10 +987,6 @@ body {
     z-index: 1200;
 }
 
-/* =====================================
-   LARGE LAPTOPS (1200px)
-===================================== */
-
 @media screen and (max-width: 1200px) {
 
     .nav-list {
@@ -1040,12 +1036,6 @@ body {
     }
 
 }
-
-
-/* =====================================
-   LAPTOPS AND SMALL DESKTOPS (992px)
-===================================== */
-
 @media screen and (max-width: 992px) {
 
     .site-header {
@@ -1108,14 +1098,7 @@ body {
 
 }
 
-
-/* =====================================
-   TABLETS (768px)
-===================================== */
-
 @media screen and (max-width: 768px) {
-
-    /* Top Navigation */
 
     .top-strip {
         display: none;
@@ -1167,9 +1150,6 @@ body {
         font-size: 19px;
     }
 
-
-    /* Mega Menu */
-
     .mega-menu {
         top: 65px;
         max-height: calc(100vh - 65px);
@@ -1193,16 +1173,10 @@ body {
         font-size: 12px;
     }
 
-
-    /* Promotion Bar */
-
     .promo-bar {
         font-size: 12px;
         padding: 12px;
     }
-
-
-    /* Hero Section */
 
     .hero-main {
         height: 75vw;
@@ -1229,9 +1203,6 @@ body {
         font-size: 13px;
     }
 
-
-    /* Feature Grid */
-
     .feature-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1239,9 +1210,6 @@ body {
     .feature-tile {
         height: 260px;
     }
-
-
-    /* Campaign */
 
     .campaign-image {
         height: 65vw;
@@ -1256,9 +1224,6 @@ body {
     .wide-copy h2 {
         font-size: 40px;
     }
-
-
-    /* Products */
 
     .product-row {
         grid-template-columns: repeat(2, 1fr);
@@ -1281,9 +1246,6 @@ body {
         height: 42px;
     }
 
-
-    /* Split Feature */
-
     .split-feature {
         grid-template-columns: 1fr;
     }
@@ -1291,9 +1253,6 @@ body {
     .split-card {
         height: 400px;
     }
-
-
-    /* Trending */
 
     .trending-section {
         padding: 45px 5%;
@@ -1305,8 +1264,6 @@ body {
     }
 
 
-    /* Stories */
-
     .story-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1314,9 +1271,6 @@ body {
     .story-grid img {
         height: 190px;
     }
-
-
-    /* Dark Footer */
 
     .site-footer {
         padding: 40px 5% 25px;
@@ -1331,9 +1285,6 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-
-
-    /* White Nike Footer */
 
     .nike-footer .category-section {
         grid-template-columns: repeat(2, 1fr);
@@ -1356,14 +1307,7 @@ body {
 
 }
 
-
-/* =====================================
-   MOBILE PHONES (576px)
-===================================== */
-
 @media screen and (max-width: 576px) {
-
-    /* Header */
 
     .site-header {
         height: 60px;
@@ -1397,9 +1341,6 @@ body {
         padding: 20px 15px;
     }
 
-
-    /* Hero */
-
     .hero-main {
         height: 110vw;
         min-height: 400px;
@@ -1427,9 +1368,6 @@ body {
         font-size: 12px;
     }
 
-
-    /* Feature Grid */
-
     .feature-grid {
         grid-template-columns: 1fr;
         gap: 8px;
@@ -1442,9 +1380,6 @@ body {
     .tile-caption h3 {
         font-size: 19px;
     }
-
-
-    /* Campaign */
 
     .campaign-image {
         height: 100vw;
@@ -1465,9 +1400,6 @@ body {
         font-size: 35px;
     }
 
-
-    /* Product Row */
-
     .product-row {
         grid-template-columns: 1fr;
     }
@@ -1483,9 +1415,6 @@ body {
     .section-heading h2 {
         font-size: 20px;
     }
-
-
-    /* Product Slider */
 
     .product-section {
         width: 94%;
@@ -1526,9 +1455,6 @@ body {
         font-size: 13px;
     }
 
-
-    /* Split Feature */
-
     .split-feature {
         grid-template-columns: 1fr;
         padding: 0 8px;
@@ -1546,9 +1472,6 @@ body {
     .split-copy h2 {
         font-size: 27px;
     }
-
-
-    /* Trending */
 
     .trending-section {
         padding: 40px 15px;
@@ -1568,9 +1491,6 @@ body {
         font-size: 12px;
     }
 
-
-    /* Stories */
-
     .stories {
         padding: 15px 4% 40px;
     }
@@ -1587,9 +1507,6 @@ body {
     .story-grid img {
         height: 230px;
     }
-
-
-    /* Dark Footer */
 
     .site-footer {
         padding: 35px 20px 20px;
@@ -1618,9 +1535,6 @@ body {
     .site-footer .footer-bottom div {
         gap: 12px;
     }
-
-
-    /* White Footer */
 
     .nike-footer {
         padding: 25px 18px;
@@ -1683,11 +1597,6 @@ body {
     }
 
 }
-
-
-/* =====================================
-   SMALL MOBILE PHONES (400px)
-===================================== */
 
 @media screen and (max-width: 400px) {
 
@@ -1773,11 +1682,6 @@ body {
     }
 
 }
-
-
-/* =====================================
-   EXTRA SMALL PHONES (350px)
-===================================== */
 
 @media screen and (max-width: 350px) {
 
